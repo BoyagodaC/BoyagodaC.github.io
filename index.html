@@ -4,13 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Page</title>
+    <title>Interactive Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .menu-item {
+            display: inline-block;
+        }
+
+        .submenu {
+            display: none;
+            background-color: #666;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 200px;
+            padding: 10px;
+        }
+
+        .menu-item:hover .submenu {
+            display: block;
+        }
+
+        .submenu a {
+            display: block;
+            padding: 8px;
+            color: white;
+        }
+
+        .submenu a:hover {
+            background-color: #777;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Hello, this is a test page!</h1>
-    <p>pluh</p>
-    <a href="test.html">Link Text</a>
+
+    <header>
+        <h1>Interactive Website</h1>
+    </header>
+
+    <nav>
+        <div class="menu-item">
+            <a href="#">Home</a>
+        </div>
+        <div class="menu-item">
+            <a href="#">About</a>
+            <div class="submenu">
+                <a href="#">Team</a>
+                <a href="#">History</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">Services</a>
+        </div>
+        <div class="menu-item">
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <a href="test.html">test</a>
 </body>
 
 </html>

@@ -4,12 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Page</title>
+    <title>Interactive Accordion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .accordion-section {
+            margin: 20px;
+        }
+
+        .accordion-label {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            display: block;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .accordion-content {
+            background-color: #f1f1f1;
+            padding: 15px;
+            display: none;
+            transition: max-height 0.2s ease-out;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked+.accordion-label+.accordion-content {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Hello, this is a test page!</h1>
-    <p>pluh</p>
+
+    <div class="accordion-section">
+        <input type="checkbox" id="section1">
+        <label class="accordion-label" for="section1">Section 1</label>
+        <div class="accordion-content">
+            <p>This is the content for section 1.</p>
+        </div>
+    </div>
+
+    <div class="accordion-section">
+        <input type="checkbox" id="section2">
+        <label class="accordion-label" for="section2">Section 2</label>
+        <div class="accordion-content">
+            <p>This is the content for section 2.</p>
+        </div>
+    </div>
+
+    <div class="accordion-section">
+        <input type="checkbox" id="section3">
+        <label class="accordion-label" for="section3">Section 3</label>
+        <div class="accordion-content">
+            <p>This is the content for section 3.</p>
+        </div>
+    </div>
+
 </body>
 
 </html>
