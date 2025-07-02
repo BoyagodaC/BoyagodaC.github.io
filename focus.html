@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Effect</title>
+    <style>
+        input {
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #3498db;
+            /* Blue border when focused */
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.6);
+            /* Glow effect */
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" placeholder="Click or Tab to Focus">
+
+</body>
+
+</html>

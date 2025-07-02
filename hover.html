@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Hover Transition</title>
+    <style>
+        .button {
+            padding: 15px 30px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+            /* Slightly enlarges the button */
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="button">Hover Me</button>
+
+</body>
+
+</html>

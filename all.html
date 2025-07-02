@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Button</title>
+    <style>
+        .interactive-button {
+            padding: 15px 30px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .interactive-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+        }
+
+        .interactive-button:focus {
+            outline: none;
+            border: 2px solid #2980b9;
+            box-shadow: 0 0 5px rgba(41, 128, 185, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="interactive-button">Hover or Focus Me</button>
+
+</body>
+
+</html>
